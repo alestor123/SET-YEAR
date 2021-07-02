@@ -4,7 +4,20 @@
   "description": "This is a simple code for setting your history back to an year you wanted",
   "main": "App.js",
   "scripts": {
-    "test": "standard && node test.js | tap-spec"
+    "test": "standard && node test.js | tap-spec",
+    "lint": "standard . --fix"
+  },
+  "files": [
+    "App.js",
+    "cli.js"
+  ],
+  "author": {
+    "name": "Alestor Aldous",
+    "url": "https://alestor123.github.io"
+  },
+  "funding": "https://alestor123.is-a.dev/donate/",
+  "engines": {
+    "node": ">=10"
   },
   "repository": {
     "type": "git",
@@ -25,10 +38,14 @@
     "time",
     "travel"
   ],
-  "author": "Alestor Aldous",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/alestor123/SET-YEAR/issues"
   },
-  "homepage": "https://github.com/alestor123/SET-YEAR#readme"
+  "homepage": "https://github.com/alestor123/SET-YEAR#readme",
+  "devDependencies": {
+    "standard": "^16.0.3",
+    "tap": "^15.0.9",
+    "tap-spec": "^5.0.0"
+  }
 }
